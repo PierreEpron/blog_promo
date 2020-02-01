@@ -1,12 +1,176 @@
 {% extends "base.html" %}
 {% block title %}Accueil{% endblock %}
 {% block content %}
-    <h2>Home</h2>
-    <p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus 
-       massa non tortor. Vestibulum diam diam, posuere in viverra in, 
-       ullamcorper et libero. Donec eget libero quis risus congue imperdiet ac 
-       id lectus. Nam euismod cursus arcu, et consequat libero ullamcorper sit 
-       amet.
-    </p>
+{% load static %}
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2 mt">
+          <h1 class="animation slideDown">lorem ipsum</h1>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /headerwrap -->
+
+  <div class="container">
+
+    <div class="row mt centered ">
+      <div class="col-lg-4 col-lg-offset-4">
+        <h3>What Is Happening?</h3>
+        <hr>
+      </div>
+    </div>
+    <!-- /row -->
+
+    <div class="row mt mb-2">
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port04.jpg' %}" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Post 1</h4>
+					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					</div>
+				</a>
+        <p>The Sky Is The Limit</p>
+        <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <hr-d>
+          <p class="time"><i class="fa fa-comment-o"></i> 3 | <i class="fa fa-calendar"></i> 14 Nov.</p>
+      </div>
+      <!-- col-lg-4 -->
+
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port05.jpg' %}" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Post 2</h4>
+					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					</div>
+				</a>
+        <p>Another Cool Stuff</p>
+        <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <hr-d>
+          <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+      </div>
+      <!-- col-lg-4 -->
+
+      <div class="col-lg-4 col-md-4 col-xs-12 desc">
+        <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port06.jpg' %}" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Post 3</h4>
+					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					</div>
+				</a>
+        <p>This Is Awesome</p>
+        <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <hr-d>
+          <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+      </div>
+      <!-- col-lg-4 -->
+    </div>
+
+      <div class="row mt mb-2">
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+          <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port04.jpg' %}" alt="" />
+            <div class="b-wrapper">
+                <h4 class="b-from-left b-animate b-delay03">Post 1</h4>
+                <p class="b-from-right b-animate b-delay03">Read More.</p>
+            </div>
+          </a>
+          <p>The Sky Is The Limit</p>
+          <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <hr-d>
+            <p class="time"><i class="fa fa-comment-o"></i> 3 | <i class="fa fa-calendar"></i> 14 Nov.</p>
+        </div>
+        <!-- col-lg-4 -->
+  
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+          <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port05.jpg' %}" alt="" />
+            <div class="b-wrapper">
+                <h4 class="b-from-left b-animate b-delay03">Post 2</h4>
+                <p class="b-from-right b-animate b-delay03">Read More.</p>
+            </div>
+          </a>
+          <p>Another Cool Stuff</p>
+          <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <hr-d>
+            <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+        </div>
+        <!-- col-lg-4 -->
+  
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+          <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port06.jpg' %}" alt="" />
+            <div class="b-wrapper">
+                <h4 class="b-from-left b-animate b-delay03">Post 3</h4>
+                <p class="b-from-right b-animate b-delay03">Read More.</p>
+            </div>
+          </a>
+          <p>This Is Awesome</p>
+          <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <hr-d>
+            <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+        </div>
+        <!-- col-lg-4 -->
+      </div>
+        <div class="row mt mb-2">
+          <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port04.jpg' %}" alt="" />
+              <div class="b-wrapper">
+                  <h4 class="b-from-left b-animate b-delay03">Post 1</h4>
+                  <p class="b-from-right b-animate b-delay03">Read More.</p>
+              </div>
+            </a>
+            <p>The Sky Is The Limit</p>
+            <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <hr-d>
+              <p class="time"><i class="fa fa-comment-o"></i> 3 | <i class="fa fa-calendar"></i> 14 Nov.</p>
+          </div>
+          <!-- col-lg-4 -->
+    
+          <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port05.jpg' %}" alt="" />
+              <div class="b-wrapper">
+                  <h4 class="b-from-left b-animate b-delay03">Post 2</h4>
+                  <p class="b-from-right b-animate b-delay03">Read More.</p>
+              </div>
+            </a>
+            <p>Another Cool Stuff</p>
+            <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <hr-d>
+              <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+          </div>
+          <!-- col-lg-4 -->
+    
+          <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go" href="#"><img width="350" src="{% static 'img/portfolio/port06.jpg' %}" alt="" />
+              <div class="b-wrapper">
+                  <h4 class="b-from-left b-animate b-delay03">Post 3</h4>
+                  <p class="b-from-right b-animate b-delay03">Read More.</p>
+              </div>
+            </a>
+            <p>This Is Awesome</p>
+            <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <hr-d>
+              <p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 13 Oct.</p>
+          </div>
+          <!-- col-lg-4 -->
+        </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'lib/hover-pack/hover-pack.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
 {% endblock %}

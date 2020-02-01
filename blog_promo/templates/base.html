@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <title>{% block title %}Accueil{% endblock %}</title>
 
-    {% load static %}
-    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    {% load static %}  <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+    <link href="{% static 'img/favicon.png' %}" rel="stylesheet" />
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="stylesheet" />
+    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'lib/animations/animations.css' %}" rel="stylesheet" />
+    <link href="{% static 'lib/hover-pack/hover-pack.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/colors/color-74c9be.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 </head>
 <body>
-<header>La gazette</header>
     <nav>
        {% block nav %}
-       <ul>
+       <!-- <ul>
             <li><a href="/">Accueil</a></li>
-       </ul>
+       </ul> -->
        {% endblock %}
    </nav>
    <section id="content">
