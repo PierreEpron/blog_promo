@@ -1,2 +1,2 @@
 #ignore cached files
-/blog_promo/blog_promo/__pycache__
+blog_promo/blog_promo/__pycache__
