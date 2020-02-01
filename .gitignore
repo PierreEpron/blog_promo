@@ -6,3 +6,10 @@ blog_promo/blog_promo/__pycache__
 
 #ignore venv
 venv/
+
+#ignore VSCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
