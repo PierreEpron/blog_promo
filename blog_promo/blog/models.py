@@ -15,3 +15,9 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+    
+    @classmethod
+    def get_with_shape(cls, shape, order_by='-last_modified'):
+        """ return (shape[0], shape[1]) list of articles """
+        articles = Article.objects.order_by('-last_modified')[:shape[0] * shape[1]]
+        return [[articles[i*shape[1]+j]for j in range(0, shape[1])] for i in range(0, shape[0])]
