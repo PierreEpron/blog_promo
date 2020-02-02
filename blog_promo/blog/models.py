@@ -12,3 +12,6 @@ class Article(models.Model):
     content = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField('last time modified', auto_now=True)
+
+    def __str__(self):
+        return self.title
